@@ -1,0 +1,36 @@
+<html><head><title>Vigor Login Page</title><meta http-equiv=Content-Type content="text/html; charset=iso-8859-1"><script> function TR(str){return str;}</script><style>
+td.userpwd {
+color: #000000;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 14px;
+font-weight: bold;
+}
+td.errmsg {
+color : red;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 12px;
+}
+td.copyright {
+color: #FFFFFF;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-weight: normal;
+}
+input.userpwd {
+width: 160px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+input.login {
+color: #FFFFFF;
+width: 82px;
+height: 25px;
+padding: 0 .38em .22em .38em;
+background: #004488 url(images/login1.gif) scroll 0;
+border: 0px #004488 solid;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+cursor: pointer;
+}
+</style></head><body><form onsubmit="return false;" name=frm1><div width=100% marginheight=0 height=100% marginwidth=0 style=z-index:-10><iframe style="z-index:-1;position:absolute;left:0;top:0" name="content_frame" id="content_frame" width=100% height=100% frameborder=0></iframe></div><table width=100% height=90% border=0><tr><td><table width=460px background=images/login.jpg height=255px border=0 align=center><tr><td colspan=2><table width=80% border=0 cellpadding=2 cellspacing=0 align=center><tr class=CustomLogin style=display:none align=center><td colspan=2><h3></h3></td></tr><tr><td width=50% class=userpwd>Username</td><td width=50%><input class=userpwd type=text name=sUserName maxlength=24></td></tr><tr><td class=userpwd>Password</td><td><input class=userpwd type=password name=sSysPass maxlength=24></td></tr><tr><td class=errmsg height=30 colspan=2><span id=errmsg></span></td></tr><tr><td colspan=2 align=right><input class=login value=Login type=button name=btnOk></td></tr></table></td></tr><tr><td width=10 height=40></td><td class=copyright>Copyright&copy;, DrayTek Corp. All Rights Reserved.</td></tr></table><table class=CustomLogin style=display:none border=0 align=center><tr><td><h1><b><font color=red>Vigor:</font></b></h1><p> This is an example of Bulletin feature of Vigor Routers</p><p> - 1. John, please pay your rent</p><p> - 2. Mary, please collect your electricity bill in the mailbox</p><p> - 3. Josh, could't manage to reach you but your parents were looking for you urgently </p></td></tr></table></td></tr></table></td></tr></table></form><form name=frmSub><script>var sUser_mgt_End='';var form_num=2; if(sUser_mgt_End=="")form_num+=3; for(i=0;i<form_num;i++){document.write("<input type=hidden name=obj"+i+">");}</script></form></body></html><script>var isNav=(navigator.appName.indexOf("Netscape")!=-1);var isIE=(navigator.appName.indexOf("Microsoft")!=-1);var isOpr=(navigator.appName.indexOf("Opera")!=-1);var f=document.frm1;var iFrmLgErr=1;var iCustomLoginFlag='0';var CUST_LOGIN_ENABLE=(1<<3);var src_ip;var target_url;var mode;initParameter();initPage();ClearCookies();function showElmtByClass(_doc,_tag,_el){var doc=_doc;var tag=_tag;var el=_el;if(doc.getElementsByTagName){var nodes=doc.getElementsByTagName(tag);var max=nodes.length;for(var i=0;i<max;i++){var node=nodes.item(i);if(node.className==el){node.style.display="";}}}}function initPage(){if((iCustomLoginFlag&CUST_LOGIN_ENABLE)==CUST_LOGIN_ENABLE){showElmtByClass(document,"tr","CustomLogin");showElmtByClass(document,"table","CustomLogin");} if(self!=top)top.location="weblogin.htm";f.sUserName.focus();if(sUser_mgt_End==""){if(mode){switch(mode){case 3: if(iFrmLgErr==4){errmsg.innerHTML=TR("User Mode is off now.");}else{errmsg.innerHTML="The username or password you entered is incorrect.";}break;case 4: errmsg.innerHTML="Reach the maximum login number. Try another user account.";break;case 5: errmsg.innerHTML="No available buffer now. Please contact the administrator";break;case 6: errmsg.innerHTML="The username or password you entered is incorrect.";break;case 7:errmsg.innerHTML="User account is not enabled now.";break;case 8:errmsg.innerHTML="User's time is up, or it has not enough time quota";break;case 9:errmsg.innerHTML="User login denied from http protocol. Please contact the administrator";break;default:if(iFrmLgErr==2)errmsg.innerHTML="The username or password you entered is incorrect.";break;}}else if(iFrmLgErr==2){errmsg.innerHTML="The username or password you entered is incorrect.";}else if(iFrmLgErr==4){errmsg.innerHTML=TR("User Mode is off now.");}}else if(iFrmLgErr==2){errmsg.innerHTML=TR("The username or password you entered is incorrect.");}else if(iFrmLgErr==4){errmsg.innerHTML=TR("User Mode is off now.");} for(var d=0;d<document.forms.length;d++){ for(var e=0;e<document.forms[d].elements.length;e++){addhandlers(document.forms[d].elements[e]);}}}function initParameter(){if(sUser_mgt_End==""){src_ip='';target_url='';mode=0;}}function encode(instr){var keyStr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var outstr="";var chr1,chr2,chr3="";var enc1,enc2,enc3,enc4="";var i=0;do{chr1=instr.charCodeAt(i++);chr2=instr.charCodeAt(i++);chr3=instr.charCodeAt(i++);enc1=chr1>>2;enc2=((chr1&3)<<4)|(chr2>>4);enc3=((chr2&15)<<2)|(chr3>>6);enc4=chr3&63;if(isNaN(chr2)){enc3=enc4=64;}else if(isNaN(chr3)){enc4=64;}outstr=outstr+keyStr.charAt(enc1)+keyStr.charAt(enc2)+keyStr.charAt(enc3)+keyStr.charAt(enc4);chr1=chr2=chr3="";enc1=enc2=enc3=enc4="";}while(i<instr.length);return outstr;}function submitPara(){var frmSub=document.frmSub;frmSub.method="post";frmSub.action="cgi-bin/wlogin.cgi";frmSub[0].name="aa";frmSub[0].value=encode(f.sUserName.value);frmSub[1].name="ab";frmSub[1].value=encode(f.sSysPass.value); if(sUser_mgt_End==""&&mode!=0){frmSub[2].name="src_ip";frmSub[2].value=src_ip;frmSub[3].name="target_url";frmSub[3].value=target_url;frmSub[4].name="mode";frmSub[4].value=mode;}frmSub.submit();}function handler(_e){var e=_e,elmt,type;if(isNav){elmt=e.target;type=e.type;keycode=e.which;}if(isIE||isOpr){e=window.event;elmt=e.srcElement;type=e.type;keycode=e.keyCode;} if(isIE){if(elmt.type=="text")e.cancelBubble=false;else e.cancelBubble=true;}if(elmt==f.btnOk&&type=="click"){submitPara();}if(elmt!=f.btnOk&&type=="keydown"){if(keycode==13){ e.returnValue=false;submitPara();}}} function addhandlers(_o){var o=_o;o.onclick=handler;o.onkeydown=handler;}function ClearCookies(){var temp=document.cookie.split(";");var ts;for(var i=0;;i++){if(!temp[i])break;ts=temp[i].split("=")[0];DeleteCookie(ts);}}function GetCookieVal(offset){var endstr=document.cookie.indexOf(";",offset);if(endstr==-1)endstr=document.cookie.length;return unescape(document.cookie.substring(offset,endstr));}function GetCookie(name){var arg=name+"=";var alen=arg.length;var clen=document.cookie.length;var i=0;while(i<clen){var j=i+alen;if(document.cookie.substring(i,j)==arg)return GetCookieVal(j);i=document.cookie.indexOf(" ",i)+1;if(i==0)break;}return null;}function DeleteCookie(name){var exp=new Date();exp.setTime(exp.getTime()-1);var cval=GetCookie(name);document.cookie=name+"="+cval+"; expires="+exp.toGMTString();}</script>

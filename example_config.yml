@@ -1,0 +1,23 @@
+texting_configs:
+  sender: "RouterAlert"
+  uname: "username@mail.com"
+  pword: "secret"
+  contact_numbers:
+    number1: "123456789"
+    number2: "123456789"
+
+routers:
+  router1:
+    name: "xyz"
+    ip: "192.168.1.1"
+    message: "xyz is down"
+
+  router2:
+    name: "xyz"
+    ip: "192.168.1.2"
+    message: "xyz is down"
+
+  router3:
+    name: "xyz"
+    ip: "192.168.1.3"
+    message: "xyz is down"

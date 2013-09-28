@@ -1,0 +1,73 @@
+texting_configs:
+  sender: "RouterAlert"
+  uname: "finlay.mark@gmail.com"
+  pword: "ballcock"
+  contact_numbers:
+    number1: "353863102697"
+    number2: "353861962329"
+
+routers:
+  router1:
+    name: "Artane +35318486019"
+    ip: "86.43.111.54"
+    message: "Coolock Garda: +35316664200"
+
+  router2:
+    name: "Staggshead +35318010982"
+    ip: "86.43.111.54"
+    message: "Ashbourne Garda +35318010600"
+
+  router3:
+    name: "Hannigans +35318350882"
+    ip: "86.43.111.56"
+    message: "Ashbourne Garda +35318010600"
+
+  router4:
+    name: "Dunshaughlin +35318259495"
+    ip: "62.77.167.37"
+    message: "Dunshaughlin Garda +35318258600"
+
+  router5:
+    name: "Rush +35318430053"
+    ip: "86.43.111.80"
+    message: "Rush Garda +35318437202"
+
+  router6:
+    name: "Jones Clane +35345892823"
+    ip: "86.43.111.57"
+    message: "Garda Naas +35345884300"
+
+  router7:
+    name: "Sallins +35345876981"
+    ip: "86.43.111.53"
+    message: "Garda Naas +35345884300"
+
+  router8:
+    name: "Blanchardstown +35318262628"
+    ip: "86.43.111.52"
+    message: "Blanchardstown Garda +35316667000"
+
+  router9:
+    name: "Lusk +35318954291"
+    ip: "86.43.111.49"
+    message: "Lusk Garda +35318437222"
+
+  router10:
+    name: "Rathborne +35318996836"
+    ip: "86.43.111.99"
+    message: "Cabra Garda +35316667400"
+
+  router11:
+    name: "Boroimhe +35318406572"
+    ip: "86.43.111.61"
+    message: "Swords Garda +35316664700"
+
+  router12:
+    name: "Griffeen +35316108721"
+    ip: "86.43.111.59"
+    message: "Garda Lucan +35316667300"
+
+  router13:
+    name: "Cornerhouse"
+    ip: "86.43.111.59"
+    message: "Garda Naas +35345884300"
