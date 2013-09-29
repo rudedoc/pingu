@@ -14,7 +14,7 @@ routers:
 
   router2:
     name: "Staggshead +35318010982"
-    ip: "86.43.111.54"
+    ip: "86.43.111.50"
     message: "Ashbourne Garda +35318010600"
 
   router3:
@@ -69,5 +69,5 @@ routers:
 
   router13:
     name: "Cornerhouse"
-    ip: "86.43.111.59"
+    ip: "86.43.111.96"
     message: "Garda Naas +35345884300"
