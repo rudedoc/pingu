@@ -7,4 +7,8 @@ data = YAML.load_file('config.yml')['routers']
 
 routers = data.collect { |router| OpenStruct.new(router[1]) }
 
-Pingu::RoutersClient.new(routers).call_routers
+Process.detach(
+  fork {
+    Signal.trap('HUP', 'IGNORE') # Don't die upon logout
+    Pingu::RoutersClient.new(routers).call_routers }
+)
