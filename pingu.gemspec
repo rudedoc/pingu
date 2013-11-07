@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Pingu::VERSION
   spec.authors       = ["rudedoc"]
   spec.email         = ["finlay.mark@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Pings a list of routers}
+  spec.summary       = %q{Pings a list of routers, sends a text when something is up!}
   spec.homepage      = ""
   spec.license       = "MIT"
 

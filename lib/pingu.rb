@@ -3,21 +3,23 @@ require File.join(File.dirname(__FILE__), 'pingu/version')
 module Pingu
   class RoutersClient
     attr_reader :routers
-    require 'open-uri'
     require 'yaml'
+    require 'logger'
+    require 'httparty'
 
     def initialize(router_array)
-      puts router_array.inspect
       @routers = router_array.cycle
+      @logger = Logger.new('router_calls.log', 0, 0.5 * 1024 * 1024)
+      @logger.level = Logger::WARN
+      @logger.warn(@routers.inspect)
     end
 
     def call_routers
       current_router = routers.next
-      sleep(5)
-      call_routers if call_to(current_router) == ["200", "OK"]
-    rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+      call_routers if call_to(current_router) == 200
+    rescue Net::OpenTimeout, Net::ReadTimeout, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+      @logger.error("Could not reach router! => #{e}")
       send_text(current_router)
-      sleep(60)
     ensure
       call_routers
     end
@@ -25,9 +27,10 @@ module Pingu
     private
 
     def call_to(router)
-      io = open('http://'+ router.ip + '/weblogin.htm')
+      io = HTTParty.get("http://#{router.ip}/weblogin.htm", timeout: 20.00)
       logger(router, io)
-      io.status
+      sleep(5)
+      io.code
     end
 
     def send_text(current_router)
@@ -42,15 +45,15 @@ module Pingu
                 "&pword=" + texting_configs['pword'] +
                 "&selectednums=" + number +
                 "&message=" + URI.escape(message)
-        puts requested_url
-        open(requested_url)
+        @logger.error("could not reach: #{current_router.ip}")
+        HTTParty.get(requested_url)
       end
       sleep(60)
     end
 
     def logger(router, io)
       size = `ps ax -o pid,rss | grep -E "^[[:space:]]*#{$$}"`.strip.split.map(&:to_i)[1]
-      puts router.ip + " " + io.status.inspect + " " + Time.now.to_s + " " + size.to_s
+      @logger.warn(router.ip + " " + io.code.to_s + " " + Time.now.to_s + " " + size.to_s) # this should be a file write
     end
   end
 end

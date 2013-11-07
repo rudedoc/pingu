@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc96b64d-04f1-447a-af03-855bb2278f2c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ruby-version" afterPath="$PROJECT_DIR$/.ruby-version" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_pingu.rb" afterPath="$PROJECT_DIR$/run_pingu.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pingu.gemspec" afterPath="$PROJECT_DIR$/pingu.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pingu.iml" afterPath="$PROJECT_DIR$/.idea/pingu.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pingu.rb" afterPath="$PROJECT_DIR$/lib/pingu.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pingu.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380827301725" ignored="false" />
-    <file path="/Gemfile" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1379937253860" ignored="false" />
+    <file path="/Dummy.txt" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1383688560250" ignored="false" />
+    <file path="/Gemfile" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1383692701046" ignored="false" />
     <file path="/router_client_spec.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1379876149890" ignored="false" />
-    <file path="/pingu.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380482862417" ignored="false" />
+    <file path="/pingu.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1383694878956" ignored="false" />
     <file path="/spec_helper.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1379547459343" ignored="false" />
     <file path="/temp.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1379798468382" ignored="false" />
     <file path="/Rakefile" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1379832815003" ignored="false" />
@@ -23,6 +26,10 @@
     <file path="/texting_spec.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380372186276" ignored="false" />
     <file path="/.gitignore" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380486150612" ignored="false" />
     <file path="/run_pingu.rb" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380829642657" ignored="false" />
+    <file path="$PROJECT_DIR$/../roullette wheel/roulettewheel.html" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380969823912" ignored="false" />
+    <file path="/roulettewheel.html" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1380969809817" ignored="false" />
+    <file path="/pingu.gemspec" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1383691148365" ignored="false" />
+    <file path="/README.md" changelist="cc96b64d-04f1-447a-af03-855bb2278f2c" time="1383694768440" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +49,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="run_pingu.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run_pingu.rb">
+      <file leaf-file-name="pingu.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pingu.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="337" selection-end="337" vertical-scroll-proportion="0.34513274">
+            <state line="49" column="0" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router_calls.log" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/router_calls.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="0" selection-start="6146" selection-end="6146" vertical-scroll-proportion="0.8363636">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/lib/runner.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/runner_spec.rb" />
@@ -77,12 +101,15 @@
         <option value="$PROJECT_DIR$/spec/texting_spec.rb" />
         <option value="$PROJECT_DIR$/example_config.yml" />
         <option value="$PROJECT_DIR$/spec/loading_spec.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config.yml" />
-        <option value="$PROJECT_DIR$/lib/pingu.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/run_pingu.rb" />
+        <option value="$PROJECT_DIR$/pingu.gemspec" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/pingu.rb" />
+        <option value="$PROJECT_DIR$/router_calls.log" />
       </list>
     </option>
   </component>
@@ -117,6 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,7 +179,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,6 +193,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="196" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../roullette wheel" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="149" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="937" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="765" />
@@ -330,13 +358,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1436" height="688" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282572" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16258992" sideWeight="0.670904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1705036" sideWeight="0.6717428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -345,7 +374,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -412,44 +440,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test_fixtures/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="776" selection-end="776" vertical-scroll-proportion="0.6666667" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="90" selection-end="90" vertical-scroll-proportion="0.12684989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.rspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -457,41 +453,98 @@
         <state line="18" column="14" selection-start="165" selection-end="179" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test_fixtures/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="193" selection-end="193" vertical-scroll-proportion="0.33557048" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="59" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.6911765" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/open-uri.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="22" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.5840708">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/texting_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="60" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" />
+        <state line="0" column="60" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pingu.rb">
+    <entry file="file://$PROJECT_DIR$/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="816" selection-end="816" vertical-scroll-proportion="0.3529412" />
+        <state line="63" column="12" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.6017699">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.ruby-version">
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/open-uri.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+        <state line="27" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="0.31858408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/timeout.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="677" selection-end="677" vertical-scroll-proportion="-0.26548672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pingu.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="109" selection-start="841" selection-end="841" vertical-scroll-proportion="0.6127886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="8" selection-start="99" selection-end="99" vertical-scroll-proportion="0.13321492">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_pingu.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="337" selection-end="337" vertical-scroll-proportion="0.34513274">
+        <state line="13" column="1" selection-start="337" selection-end="337" vertical-scroll-proportion="0.3463588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pingu.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router_calls.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="6146" selection-end="6146" vertical-scroll-proportion="0.8363636">
           <folding />
         </state>
       </provider>
