@@ -18,3 +18,5 @@ tmp
 config.yml
 .ruby-version
 router_calls.log
+.DS_Store
+.config.yml.swp
