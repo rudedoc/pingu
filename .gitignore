@@ -17,3 +17,4 @@ test/version_tmp
 tmp
 config.yml
 .ruby-version
+router_calls.log
